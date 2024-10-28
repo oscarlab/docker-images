@@ -17,12 +17,6 @@ For more detailed output, use:
 
 `docker buildx build . --progress=plain`
 
-You can confirm the built image is for multiple architectures using
-
-`docker image inspect TAG`
-
-where "TAG" is the name of the image.
-
 The full command to build and push (requires privilege) is:
 
 `docker buildx build --tag index.docker.io/oscar1ab/needledb:latest --platform linux/amd64 --push .`
